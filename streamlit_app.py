@@ -4,8 +4,8 @@ st.write("Bonjour Monsieur  "+name)
 import streamlit as st
 
 genre = st.radio(
-    "What's your favorite movie genre",
-    [":rainbow[Comedy]", "***Drama***", "Documentary :movie_camera:"],
+    "Quel est ton plat préféré ?",
+    [":rainbow[Patte bolognaise]", "***Pizza***", "Kebab : kebab:"],
     captions = ["Laugh out loud.", "Get the popcorn.", "Never stop learning."])
 
 if genre == ':rainbow[Comedy]':

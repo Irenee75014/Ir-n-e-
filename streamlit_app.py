@@ -20,7 +20,5 @@ genre = st.radio(
 
 if genre == ':rainbow[Chinois]':
     st.write('Sa ce voit t'est chinois.')
-if genre == ':***SNT***':
-    st.write('Toi t'est un gros gamer.')
 else:
     st.write("En vrai je suis d'accord avec toi.")

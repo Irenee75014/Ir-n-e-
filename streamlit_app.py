@@ -1,6 +1,14 @@
 import streamlit as st
 name=st.text_input("your name")
 st.write("Bonjour Monsieur  "+name)
-st.radio(label, options, index=0, format_func=special_internal_function, 
-key=None, help=None, on_change=None, args=None, kwargs=None, *,
-disabled=False, horizontal=False, captions=None, label_visibility="visible")
+import streamlit as st
+
+genre = st.radio(
+    "What's your favorite movie genre",
+    [":rainbow[Comedy]", "***Drama***", "Documentary :movie_camera:"],
+    captions = ["Laugh out loud.", "Get the popcorn.", "Never stop learning."])
+
+if genre == ':rainbow[Comedy]':
+    st.write('You selected comedy.')
+else:
+    st.write("You didn\'t select comedy.")

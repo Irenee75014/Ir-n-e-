@@ -13,8 +13,6 @@ if genre == ':rainbow[Patte bolognaise]':
 else:
     st.write("Mauvais choix")
 
-import streamlit as st
-
 genre = st.radio(
     "Quel est ta matiere préféré ?",
     [":rainbow[Chinois]", "***SNT***", "Math :"],

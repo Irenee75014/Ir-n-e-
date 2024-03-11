@@ -5,10 +5,10 @@ import streamlit as st
 
 genre = st.radio(
     "Quel est ton plat préféré ?",
-    [":rainbow[Patte bolognaise]", "***Pizza***", "Kebab : kebab:"],
-    captions = ["Laugh out loud.", "Get the popcorn.", "Never stop learning."])
+    [":rainbow[Patte bolognaise]", "***Pizza***", "Kebab :"],
+    captions = ["facilité", "Italie.", "Trop bon."])
 
-if genre == ':rainbow[Comedy]':
-    st.write('You selected comedy.')
+if genre == ':rainbow[Patte bolognaise]':
+    st.write('Tu a des bons goûts.')
 else:
-    st.write("You didn\'t select comedy.")
+    st.write("Mauvais choix")

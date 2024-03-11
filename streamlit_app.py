@@ -1,2 +1,3 @@
 import streamlit as st
-st.write("Hello")
+name=st.input("your name")
+st.write("Hello"+name)

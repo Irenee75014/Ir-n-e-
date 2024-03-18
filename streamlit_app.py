@@ -5,6 +5,7 @@ voc=pd.read_csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vSQ6MdH76cliOGX
 l=voc.shape[0]
 i=np.random.choice(range(l))
 word_fr=voc['Définition'].values[i]
-word_chi=voc['Hanzi'].values[i]
-st.write(word_fr+" "+word_chi)
+word_hanzi=voc['Hanzi'].values[i]
+word_pinyin=voc['Pinyin'].values[i]
+st.write(word_fr+" "+word_hanzi+" "+word_pinyin)
 st.button("refresh")
